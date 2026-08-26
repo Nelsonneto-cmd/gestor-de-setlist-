@@ -1,0 +1,65 @@
+:root {
+  font-family: Inter, Aptos, system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* Estilo para os inputs */
+input {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Estilo para os botões */
+button {
+  background-color: #252525;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Cartões do Layout */
+section, .setlist-card {
+  background-color: #1e1e1e !important;
+  border: 1px solid #2d2d2d !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Regra de Impressão (Mantém fundo branco ao imprimir em papel) */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .setlist-card {
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
