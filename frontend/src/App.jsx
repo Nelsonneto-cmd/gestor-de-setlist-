@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function App() {
-const API_URL = import.meta.env.VITE_API || 'https://ecommerce-server-xxxx.onrender.com';
+const API_URL = import.meta.env.VITE_API || 'https://ecommerce-server-da8db68ou01pc73c70c8g.onrender.com';
   const [setlists, setSetlists] = useState([]);
 
   const [title, setTitle] = useState('');
